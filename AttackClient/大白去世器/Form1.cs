@@ -47,6 +47,7 @@ namespace 大白去世器
                     Thread.Sleep(wait);
 					//此处往下为调用接口的代码，需要自行填写
                     //全局变量默认可以调用获取到的IP地址，此处代码纯自定义，配合对应API
+                    //API可以是请求自己的接口，也可以是请求本程序的API
 
                 }
                 else
@@ -73,6 +74,7 @@ namespace 大白去世器
                 a = 1;
                 ASA.Enabled = true;
                 ASA.Start();
+                radioButton1.Enabled = true;
             }
             else
             {
@@ -80,6 +82,7 @@ namespace 大白去世器
                 a = 0;
                 ASA.Enabled = false;
                 ASA.Stop();
+                radioButton1.Enabled = false;
             }
         }
 
